@@ -1,0 +1,4 @@
+android:background="black" ; // khalfiya (button-editText)
+android:textsize="18sp" ; //size katba
+android:fontFamily="serif" ; //naw3 khad
+android:textColor="white" ; //color katba
