@@ -13,25 +13,18 @@ public class CompteCourant extends Compte {
         this.decouvert = decouvert;
     }
 
-    public String toString() {
+    
+    public Double updateSolde() {
+        return solde;
+    }
+    // @Override
+    // public void updatSolde(double newSolde) {
+    //     setSolde(newSolde);
+    // }
 
+    public String toString() {
         return super.toString() + " " + decouvert;
     }
     
-    // @Override
-    // public void updatSolde(double newSolde) {
-    //     super.updatSolde(newSolde);
-    // }
-
-
-    // double totalretier=0;
-    // public void retirer(double mt)  {
-    //     if (mt <= solde + decouvert) {
-    //         solde -= mt;
-    //         nbOperation++;
-    //         liste.add(new Retrait(nbOperation, new Date(), mt));
-    //         totalretier += mt;
-    //     }
-
-    // }
+    
 }

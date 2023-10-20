@@ -55,9 +55,7 @@ public class Compte {
         if (mt <= solde) {
                  solde -= mt;
                  totalretier +=mt;
-
-               ++nbOperation;
-
+                 ++nbOperation;
                  liste.add(new Retrait(nbOperation,new Date(),mt));
 
             }
@@ -83,25 +81,9 @@ public class Compte {
         }
 
     }
-   // public void retirr(double mt) {
-   //    if (mt <= this.solde) {
-   //       this.solde -= mt;
-   //       System.out.println(this.solde);
-   //    }
-
-   // }
-   
-   // public void updatesolde() {
-   //    System.out.println(getSolde()); 
-   // }
-
-   // public void mettreajourSolde() {
-   //    if (this instanceof CompteEpargne) {
-   //       double taux = ((CompteEpargne) this).getTaux();
-   //       this.solde += this.solde * taux;
-   //    }
-      
-   // }
+   public Double updateSolde() {
+      return this.solde;
+   }
 
     
    public String toString() {
