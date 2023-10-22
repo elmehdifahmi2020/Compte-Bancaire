@@ -1,8 +1,8 @@
 import java.util.Date;
 
 public class Retrait extends Operation{
-    public Retrait(Integer numero, Date dateOp, double montant){
-        super(numero,dateOp,montant);
+    public Retrait(Integer n, Date t, double mt){
+        super(n,t,mt);
 
     }
 
